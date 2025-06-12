@@ -27,7 +27,7 @@ const defaultLightTheme: ThemeData = {
   },
   background: {
     type: "color",
-    color: "#dde3e9",
+    color: "#ffffff",
   },
   cardStyle: "neutral",
 };
@@ -117,4 +117,3 @@ const initialCurrentTheme =
 applyThemeStyles(initialCurrentTheme);
 
 export {};
-
