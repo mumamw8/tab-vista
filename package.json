@@ -2,7 +2,7 @@
   "name": "tab-vista-extension",
   "description": "Display bookmarks on your new tab page.",
   "private": true,
-  "version": "0.0.1.5",
+  "version": "0.0.1.6",
   "type": "module",
   "scripts": {
     "dev": "wxt",

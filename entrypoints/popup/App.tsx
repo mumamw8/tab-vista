@@ -1,6 +1,6 @@
 import { useState } from "react";
-import reactLogo from "@/assets/react.svg";
-import wxtLogo from "/wxt.svg";
+// import reactLogo from "@/assets/react.svg";
+// import wxtLogo from "/wxt.svg";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,18 +9,18 @@ function App() {
     <div className="max-w-7xl mx-auto p-8 text-center min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
       <div className="mb-8">
         <a href="https://wxt.dev" target="_blank" className="inline-block">
-          <img
+          {/* <img
             src={wxtLogo}
             className="h-24 p-6 transition-all duration-300 hover:[filter:drop-shadow(var(--drop-shadow-glow-green))]"
             alt="WXT logo"
-          />
+          /> */}
         </a>
         <a href="https://react.dev" target="_blank" className="inline-block">
-          <img
+          {/* <img
             src={reactLogo}
             className="h-24 p-6 transition-all duration-300 hover:[filter:drop-shadow(var(--drop-shadow-glow-blue))] animate-spin-slow"
             alt="React logo"
-          />
+          /> */}
         </a>
       </div>
 
