@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@plugin "daisyui";
+/* @tailwind utilities; */
+
+@layer base {
+    :root {
+        color-scheme: light dark;
+        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        --custom-background-color: light-dark(#faf9f5, #3c3c3c);
+        --custom-text-color: light-dark(#151516, #ffffff);
+        --custom-dark-transparent-color: rgba(0, 0, 0, 0.4);
+        --custom-light-transparent-color: rgba(255, 255, 255, 0.4);
+        background-color: var(--custom-background-color);
+        color: var(--custom-text-color);
+    }
+}
+
+/* #root {
+  @apply max-w-7xl mx-auto p-8 text-center;
+} */
+
+body {
+  background-image: var(--custom-background-image, none);
+  background-color: var(--custom-background-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  position: relative;
+  color: var(--custom-text-color);
+}
+
+.custom-wallpaper-background-color-class::before {
+  content: "";
+  position: fixed; /* covers viewport even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--custom-dark-transparent-color); /* overlay, adjust opacity as needed */
+  z-index: 0; /* stays behind content */
+  pointer-events: none; /* allows clicks through overlay */
+}
+
+.custom-wallpaper-background-color-class {
+  background-color: var(--custom-background-color);
+}
+
+.custom-light-transparent-background-color-class::before {
+  content: "";
+  position: fixed; /* covers viewport even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--custom-light-transparent-color); /* overlay, adjust opacity as needed */
+  z-index: 0; /* stays behind content */
+  pointer-events: none; /* allows clicks through overlay */
+}
+
+.custom-light-transparent-background-color-class {
+  background-color: var(--custom-background-color);
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
