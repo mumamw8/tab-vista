@@ -39,7 +39,7 @@ const FaviconOrLetter: React.FC<{
   return (
     <div
       className={clsx(
-        `relative flex items-center justify-center w-16 h-16 mb-2 rounded-2xl backdrop-blur-sm shadow-md transition-all duration-200 overflow-hidden`,
+        `relative flex items-center justify-center w-16 h-16 mb-2 rounded-2xl backdrop-blur-sm shadow-full-sm transition-all duration-200 overflow-hidden`,
         cardStyle === "neutral" && "bg-white/5",
         cardStyle === "light" && "bg-white/20",
         cardStyle === "dark" && "bg-gray-900/20"

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import BookmarkList from "@/components/BookmarkList";
-import { CircleChevronLeftIcon, EllipsisIcon } from "lucide-react";
+import { ChevronLeft, CircleChevronLeftIcon, EllipsisIcon } from "lucide-react";
 import ReadingList from "@/components/ReadingList";
 import SuggestionsList from "@/components/SuggestionsList";
 import { type Browser } from "wxt/browser";
@@ -18,7 +18,7 @@ function App() {
     // systemTheme,
     cardStyle,
     textColor,
-    // backgroundColor,
+    backgroundColor,
     bgType,
     theme,
   } = useTheme();
@@ -150,12 +150,13 @@ function App() {
         <div className="flex items-center mb-4">
           {folderStack.length > 0 && (
             <button
-              className="flex items-center gap-2 opacity-70 font-bold text-lg cursor-pointer mr-10"
+              className="flex items-center gap-2 font-bold text-lg cursor-pointer mr-10 rounded-full"
               onClick={handleBack}
             >
-              <CircleChevronLeftIcon
+              <ChevronLeft
+                strokeWidth={2.5}
                 color={textPageColor}
-                className="w-6 h-6"
+                className="w-5 h-5"
               />
             </button>
           )}
